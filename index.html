@@ -36,7 +36,6 @@ body {
     overflow: hidden;
 }
 
-/* Glow background effect */
 body::before {
     content: "";
     position: fixed;
@@ -48,40 +47,34 @@ body::before {
     left: -100px;
 }
 
-/* Title */
 .title {
     margin-top: 80px;
     font-size: 40px;
     font-weight: 700;
-    color: #ffffff;
     text-shadow: 0 0 15px rgba(0,255,150,0.7);
 }
 
 .telugu {
-    font-size: 18px;
+    font-size: 16px;
     opacity: 0.8;
+    margin-bottom: 10px;
 }
 
-/* Countdown */
 .countdown {
     font-size: 110px;
     margin: 40px 0;
     font-weight: bold;
     color: #00ffae;
-    text-shadow: 0 0 20px rgba(0,255,150,0.8);
 }
 
-/* Premium Glass Card */
 .card {
     margin: 20px;
     padding: 25px;
     border-radius: 20px;
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(15px);
-    box-shadow: 0 0 40px rgba(0,255,150,0.2);
 }
 
-/* Button */
 .btn {
     display: inline-block;
     padding: 12px 28px;
@@ -91,24 +84,19 @@ body::before {
     color: #00291f;
     background: linear-gradient(45deg, #00ffae, #00cc88);
     font-weight: bold;
-    box-shadow: 0 0 20px rgba(0,255,150,0.6);
     transition: 0.3s;
 }
 
 .btn:hover {
     transform: scale(0.9);
-    box-shadow: 0 0 30px rgba(0,255,150,1);
 }
 
-/* List */
 .list {
     margin-top: 25px;
     font-size: 17px;
-    line-height: 32px;
-    color: #d9fff4;
+    line-height: 28px;
 }
 
-/* Redirect */
 .redirect {
     margin-top: 20px;
     font-size: 16px;
@@ -122,7 +110,7 @@ body::before {
 <div class="title">VAMSI CRICKET</div>
 <div class="telugu">వాంసి క్రికెట్</div>
 
-<div class="countdown" id="count">9</div>
+<div class="countdown" id="count">30</div>
 
 <div class="card">
     <a href="https://t.me/+Q3tBhJqWUsYxOTll" class="btn">
@@ -131,17 +119,22 @@ body::before {
 
     <div class="list">
         ✅ Free Access <br>
+        <div class="telugu">ఉచిత ప్రాప్యత</div>
+
         ✅ IPL, T20s, World Cup <br>
-        ✅ Join 1000s of fans who watch with clarity
+        <div class="telugu">ఐపీఎల్, టీ20లు, వరల్డ్ కప్</div>
+
+        ✅ Join 1000s of fans who watch with clarity <br>
+        <div class="telugu">స్పష్టంగా చూసే వేలాది అభిమానులతో చేరండి</div>
     </div>
 </div>
 
 <div class="redirect" id="redirectText">
-    Redirecting in 9 seconds...
+    Redirecting in 30 seconds...
 </div>
 
 <script>
-let time = 9;
+let time = 30;
 let count = document.getElementById("count");
 let redirectText = document.getElementById("redirectText");
 
